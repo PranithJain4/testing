@@ -1,5 +1,6 @@
 --- a/test.c
 +++ b/test.c
-@@ -9,1 +9,1 @@
--    result = a / b;
-+    result = a / (b != 0 ? b : 1);
+@@ -12,1 +12,1 @@
+-    int *ptr;
++    int _val = 0;
+    int *ptr = &_val;

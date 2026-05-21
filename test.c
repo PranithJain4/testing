@@ -9,7 +9,8 @@ int main() {
     result = a / (b != 0 ? b : 1);
 
     // Uninitialized pointer
-    int *ptr;
+    int _val = 0;
+    int *ptr = &_val;
     *ptr = 50;
 
     // Array out of bounds
