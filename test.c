@@ -6,7 +6,7 @@ int main() {
     int result;
 
     // Division by zero
-    result = a / b;
+    result = a / (b != 0 ? b : 1);
 
     // Uninitialized pointer
     int *ptr;
